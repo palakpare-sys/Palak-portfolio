@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palak Parekh — Graphic Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <a href="#home" class="nav-logo">Palak<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="home">
+  <div class="hero-bg-text">Design.</div>
+  <div class="hero-eyebrow fade-up">Graphic Designer</div>
+  <div class="hero-name fade-up">
+    Palak<br><em>Parekh.</em>
+  </div>
+  <div class="hero-bottom fade-up">
+    <p class="hero-desc">I love creating and exploring ideas.</p>
+<p class="hero-year">© 2026</p>
+    </p>
+    <div class="hero-scroll">Scroll</div>
+
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span>Branding</span><span class="dot">◆</span>
+    <span>Illustration</span><span class="dot">◆</span>
+    <span>Editorial</span><span class="dot">◆</span>
+    <span>Typography</span><span class="dot">◆</span>
+    <span>Graphics</span><span class="dot">◆</span>
+    <span>Identity</span><span class="dot">◆</span>
+    <span>Logos</span><span class="dot">◆</span>
+    <span>Posters</span><span class="dot">◆</span>
+    <span>Packaging</span><span class="dot">◆</span>
+    <span>Branding</span><span class="dot">◆</span>
+    <span>Illustration</span><span class="dot">◆</span>
+    <span>Editorial</span><span class="dot">◆</span>
+    <span>Typography</span><span class="dot">◆</span>
+    <span>Graphics</span><span class="dot">◆</span>
+    <span>Identity</span><span class="dot">◆</span>
+    <span>Logos</span><span class="dot">◆</span>
+    <span>Posters</span><span class="dot">◆</span>
+    <span>Packaging</span><span class="dot">◆</span>
+  </div>
+</div>
+
+<!-- Work -->
+<section id="work">
+  <div class="fade-up">
+    <div class="section-label">Selected Work</div>
+    <h2 class="section-heading">Projects that<br>made the cut.</h2>
+  </div>
+
+  <div class="work-filters fade-up">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="branding">Branding</button>
+    <button class="filter-btn" data-filter="illustration">Editorial</button>
+    <button class="filter-btn" data-filter="editorial">Typography</button>
+    <button class="filter-btn" data-filter="logos">Logos</button>
+    <button class="filter-btn" data-filter="digital">Posters</button>
+
+  </div>
+
+  <div class="work-grid fade-up" id="projectGrid">
+
+    <div class="project-card" data-cat="branding" data-title="Skincare Brand - Filora" data-image="images/filora.png" data-full="Designed a Brand Identity for a hypothetical skincare brand that is based on floral scents." data-year="2024" data-role="Brand Identity" data-client="Your Client">
+     <img src="images/tfilora.jpg" alt="Skincare Brand - Filora" class="project-thumb">
+      <div class="project-overlay">
+        <div class="project-cat">Branding</div>
+        <div class="project-title">Skincare Brand - Filora</div>
+      </div>
+      <div class="project-arrow" onclick="openModal(this.parentElement)">↗</div>
+    </div>
+
+   <div class="project-card" data-cat="illustration" data-title="A to Z Glossary" data-image="images/glossary.png" data-pdf="glossary.pdf" data-full="An 'A to Z' glossary book exploring the role of Eye in Art.">
+  <img src="images/glossary.png" alt="A to Z glossary" class="project-thumb">
+  <div class="project-overlay">
+    <div class="project-cat">Editorial</div>
+    <div class="project-title">A to Z Glossary</div>
+  </div>
+  <div class="project-arrow" onclick="openModal(this.parentElement)">↗</div>
+</div>
+
+    <div class="project-card" data-cat="editorial" data-title="Playing Cards Design" data-image="images/cardgame.png" data-full="Designed- Playing cards, Manual & Packaging for a Type guessing card game.
+Font-Helvetica">
+      <img src="images/tcardgame.png" alt="PLaying Cards Design" class="project-thumb">
+      <div class="project-overlay">
+        <div class="project-cat">Typography</div>
+        <div class="project-title">Playing Cards Design</div>
+      </div>
+      <div class="project-arrow" onclick="openModal(this.parentElement)">↗</div>
+    </div>
+
+    <div class="project-card" data-cat="logos" data-title="Logofolio" data-image="images/logofolio.png" >
+     <img src="images/tlogofolio.png" alt="Logos" class="project-thumb">
+
+      <div class="project-overlay">
+        <div class="project-cat">Logos</div>
+        <div class="project-title">Logofolio</div>
+      </div>
+      <div class="project-arrow" onclick="openModal(this.parentElement)">↗</div>
+    </div>
+
+    <div class="project-card" data-cat="branding" data-title="Restaurant - Kai" data-image="images/kai.png" data-full="Logo, Menu & Mural for Japanese restaurant - Kai">
+      <img src="images/tkai.png" alt="Restaurant-Kai" class="project-thumb">
+      <div class="project-overlay">
+        <div class="project-cat">Branding</div>
+        <div class="project-title">Restaurant - Kai</div>
+      </div>
+      <div class="project-arrow" onclick="openModal(this.parentElement)">↗</div>
+    </div>
+
+    <div class="project-card" data-cat="illustration" data-title="Kids Safety book" data-image="images/kidsbook.png" data-pdf="kidsbook.pdf" data-full="Illustrated a safety guide book for kids aged 3-6yrs">
+        <img src="images/tkidsbook.jpg" alt="Kids Safety book" class="project-thumb">
+
+      <div class="project-overlay">
+        <div class="project-cat">Editorial</div>
+        <div class="project-title">Kids Safety book</div>
+      </div>
+      <div class="project-arrow" onclick="openModal(this.parentElement)">↗</div>
+    </div>
+
+<div class="project-card" data-cat="editorial" data-title="Event collaterals - Goa Sunsplash" data-image="images/sunsplash.png" data-full="Typographic poster, tickets and reel for a Reggae music festival - Goa Sunsplash <a href='https://www.instagram.com/reel/DVqWzOCjbsz/?igsh=MWR0enlkMG8wc3N4dw==' target='_blank'>Watch the reel ↗</a>"">
+   <img src="images/tsunsplash.png" alt="Event collaterals" class="project-thumb">
+
+  <div class="project-overlay">
+    <div class="project-cat">Typography</div>
+    <div class="project-title">Typographic Poster for Goa Sunsplash</div>
+  </div>
+  <div class="project-arrow" onclick="openModal(this.parentElement)">↗</div>
+</div>
+
+<div class="project-card" data-cat="digital" data-title="Posters" data-image="images/posters.png">
+      <img src="images/tposters.png" alt="Logos" class="project-thumb">
+  <div class="project-overlay">
+    <div class="project-cat">Poster Design</div>
+    <div class="project-title">Posters</div>
+  </div>
+  <div class="project-arrow" onclick="openModal(this.parentElement)">↗</div>
+</div>
+
+  </div>
+</section>
+
+<!-- Case Study Modal -->
+<div class="modal-overlay" id="caseModal" onclick="closeModalOnBg(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-cat" id="modalCat"></div>
+    <h2 class="modal-title" id="modalTitle"></h2>
+    <div class="modal-image-area" id="modalImageArea">No image added yet</div>
+    <div class="modal-body">
+  <p id="modalFull"></p>
+  <a href="#" id="modalPdfBtn" class="modal-pdf-btn" target="_blank">
+    View Full Book
+    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
+  </div>
+</div>
+
+
+<!-- About -->
+<section id="about">
+
+  <div class="about-left">
+    <div class="about-photo fade-up">
+      <img src="images/me.png" alt="Palak Parekh">
+      <div class="about-photo-label">Palak Parekh — Mumbai</div>
+    </div>
+
+    <div class="hobbies-section">
+      <div class="hobbies-label">Hobbies</div>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <img src="images/crochet.jpeg" alt="Crochet">
+          <div class="hobby-card-label">Crochet</div>
+        </div>
+        <div class="hobby-card">
+          <img src="images/travel.jpeg" alt="Travelling">
+          <div class="hobby-card-label">Travelling</div>
+        </div>
+        <div class="hobby-card">
+          <img src="images/guitar.png" alt="Music">
+          <div class="hobby-card-label">Music</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-right">
+    <div class="section-label fade-up">About me</div>
+    <h2 class="section-heading fade-up">Hello,</h2>
+   
+    <p class="about-body fade-up">
+      I'm Palak, a graphic designer based in Mumbai driven by creativity and curiosity. I am a quiet observer who prefers to let my work speak, I enjoy transforming observations into ideas and visual outcomes. As someone still in an experimental phase, I constantly like to explore different styles - from bold and expressive to clean and minimal. I embrace every project as a space to learn and evolve. Being a perfectionist, I pay close attention to detail, believing that even the smallest elements contribute to a meaningful and thoughtful design.
+    </p> <p class="about-intro fade-up">
+      Graphic Designer - Mumbai
+    </p>
+    <p class="about-college">ATLAS Skilltech University - ISDI, Mumbai</p>
+    <div class="about-skills fade-up">
+      <span class="skill-tag">Brand Identity</span>
+      <span class="skill-tag">Typography</span>
+      <span class="skill-tag">Illustration</span>
+      <span class="skill-tag">Graphics</span>
+      <span class="skill-tag">Logos</span>
+      <span class="skill-tag">Editorial</span>
+      <span class="skill-tag">Packaging</span>
+    </div>
+    <a href="Palak-resume.pdf" target="_blank" class="about-cta fade-up">
+      Download Resume
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <div class="experience-section">
+    <div class="experience-label">Experience</div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-line"><div class="timeline-dot"></div><div class="timeline-connector"></div></div>
+        <div class="timeline-date">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-period">Aug–Oct</div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-org">Rhythm Divine Music School</div>
+          <div class="timeline-role">Website & Social Media Intern</div>
+          <div class="timeline-desc">Created website using Wix studio, helped with social media posts, shooting and editing reel content.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-line"><div class="timeline-dot"></div><div class="timeline-connector"></div></div>
+        <div class="timeline-date">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-period">June</div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-org">Aum Diamonds</div>
+          <div class="timeline-role">Freelance Logo Designer</div>
+          <div class="timeline-desc">Designed a logo, visiting card and letterhead for a jewellery brand.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-line"><div class="timeline-dot"></div><div class="timeline-connector"></div></div>
+        <div class="timeline-date">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-period">May–Jun</div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-org">Atlas – Graduation OC</div>
+          <div class="timeline-role">Volunteer – Registrations</div>
+          <div class="timeline-desc">Worked with Excel sheets, helped collecting student data and on day management.</div>
+        </div>
+      </div>
+
+
+<!--
+      <div class="timeline-item">
+        <div class="timeline-line"><div class="timeline-dot"></div><div class="timeline-connector"></div></div>
+        <div class="timeline-date">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-period">May</div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-org">Atlas – Redbull Turn It Up</div>
+          <div class="timeline-role">Volunteer – Social Media</div>
+          <div class="timeline-desc">Recorded content for social media.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-line"><div class="timeline-dot"></div><div class="timeline-connector"></div></div>
+        <div class="timeline-date">
+          <div class="timeline-year">2022</div>
+          <div class="timeline-period">Oct–Jan</div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-org">Mithibai College – Kshitij</div>
+          <div class="timeline-role">Volunteer – Artist Relations</div>
+          <div class="timeline-desc">Connected with artists and celebrities for event collaborations, main day crowd handling.</div>
+        </div>
+      </div>
+-->
+
+    </div>
+  </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="contact-bg">Hello.</div>
+  <div class="contact-inner">
+    <div class="section-label fade-up">Get in touch</div>
+    <h2 class="contact-big fade-up">
+      Let's make<br>something <em>great.</em>
+    </h2>
+    <a href="mailto:palak22parekh@gmail.com" class="contact-email fade-up">palak22parekh@gmail.com</a>
+    <div class="contact-socials fade-up">
+      <a href="https://www.behance.net/palakparekh3" class="social-link">Behance</a>
+      <a href="http://www.linkedin.com/in/palak-parekh-602a31349" class="social-link">LinkedIn</a>
+  <a href="https://www.instagram.com/designsbypalakk?igsh=MTkxM3ZneXVrMmlxNQ%3D%3D&utm_source=qr" class="social-link">Instagram</a>
+      </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Palak Parekh</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
